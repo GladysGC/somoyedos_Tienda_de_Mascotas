@@ -15,51 +15,12 @@
 <body>
   <!--Menu de navegación creado por Silvio Aguilar :D-->
   <!-- Header -->
-  <header x-data="{ open: false }" class="header">
-    <!-- Boton abrir -->
-    <a id="hamburguesa" class="header__button-nav--open" x-on:click="open = true">&#9776;</a>
-    <!-- Navegador -->
-    <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
-      <!-- Boton cerrar -->
-      <div class="nav__button" x-on:click="open = false">
-        <a id="hamburguesa" class="header__button-nav--close">&#10006;</a>
-      </div>
-
-      <!-- Menu -->
-      <ul class="nav__ul">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item">
-          <a href="#productos" class="nav__link">Productos</a>
-        </li>
-        <li class="nav__item">
-          <a href="#noticias" class="nav__link">Noticias</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contacto" class="nav__link">Contacto</a>
-        </li>
-        <h2 class="tituloDev">Powered by: </h2>
-        <div class="developers">
-          <p>Dalia Mercado</p>
-          <hr>
-          <p>Victor Moreno</p>
-          <hr>
-          <p>Jose Cabanillas</p>
-          <hr>
-          <p>Carla Rivera</p>
-          <hr>
-          <p>Daniel López</p>
-          <hr>
-          <p>Silvio Aguilar</p>
-        </div>
-      </ul>
-    </nav>
-
+  <header class="header">
     <!-- Logo -->
     <div class="logo">
       <div class="header_logo">MI PEQUEÑA MASCOTA</div>
       <a href=""><img class="huella" src="./recursos/cat-footprint-50.png" /></a>
     </div>
-
     <div class="menu-derecha">
       <!--Perfil del Usuario-->
       <a href="profile" class="profile"><img class="iconos-s" src="./recursos/customer-50.png" /></a>
@@ -126,83 +87,96 @@
   
     <!-- Contenedor de elementos -->
     <section claSS="contenedor">
+      <span class="titulo_productos" id="enlace_productos">PRODUCTOS</span>
       <div class="contenedor-items">
           <div class="item">
-              <span class="titulo-item">HILL</span>
+              <span class="titulo-item">HILLS</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$15.000</span>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">38€</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
           <div class="item">
-              <span class="titulo-item">English Horse</span>
+              <span class="titulo-item">HILLS2</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$25.000</span>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">46€</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
           <div class="item">
-              <span class="titulo-item">Knock Nap</span>
+              <span class="titulo-item">HILLS3</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$35.000</span>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">23€</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
           <div class="item">
-              <span class="titulo-item">La Night</span>
+              <span class="titulo-item">HILLS4</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$18.000</span>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">35€</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
           <div class="item">
-              <span class="titulo-item">Silver All</span>
+              <span class="titulo-item">HILLS5</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$32.000</span>
-              <button class="boton-item">Agregar al Carrito</button>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">12€</span>
+              <button class="boton-item"> Agregar al Carrito</button>
           </div>
           <div class="item">
-              <span class="titulo-item">Skin Glam</span>
+              <span class="titulo-item">HILLS6</span>
               <img src="recursos/hills.png" alt="" class="img-item">
               <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
-                <img src="./recursos/icons8-estrella-48.png" alt="">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
               </div>
-              <span class="precio-item">$18.000</span>
+              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                METABOLIC PIENSO PARA PERROS</span>
+              <span class="precio-item">62€</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
       </div>

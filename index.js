@@ -118,6 +118,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     //Agregmos al funcionalidad restar cantidad del nuevo item
     var botonRestarCantidad = item.getElementsByClassName('restar-cantidad')[0];
     botonRestarCantidad.addEventListener('click',restarCantidad);
+    
 
     //Agregamos la funcionalidad sumar cantidad del nuevo item
     var botonSumarCantidad = item.getElementsByClassName('sumar-cantidad')[0];
@@ -136,6 +137,7 @@ function sumarCantidad(event){
     selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
     actualizarTotalCarrito();
 }
+
 //Resto en uno la cantidad del elemento seleccionado
 function restarCantidad(event){
     var buttonClicked = event.target;
@@ -192,7 +194,7 @@ function actualizarTotalCarrito(){
     }
     total = Math.round(total * 100)/100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = total.toLocaleString("es") + ",00" + '€';
 
 }
 
