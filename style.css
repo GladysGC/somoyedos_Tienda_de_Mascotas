@@ -978,7 +978,7 @@
     padding: 10px;
   }
 
-}
+
 
 
 /* Estilos para Escritorio */
@@ -1141,11 +1141,14 @@
     height: 40%;
     align-self: center;   
 }
-.contenedor .contenedor-items .item:hover{
+
+/* .contenedor .contenedor-items .item:hover{
     box-shadow: 10px 10px 24px 0px rgba(8,66,124,1);
     width: 380px;
     height: 420px;
-}
+    margin: 20px 20px;
+} */
+
 .contenedor .contenedor-items .item .titulo-item{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;    
@@ -1156,6 +1159,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+
 .contenedor .contenedor-items .item .precio-item{
     color: #E66420;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1176,9 +1180,9 @@
     font-weight: bold;
     font-size: 21px;
     border: none;
-    text-transform: uppercase;
-      
+    text-transform: uppercase;   
 }
+
 .contenedor .contenedor-items .item .boton-item:hover{
   align-self: flex-end;
   margin-right: 48px; 
@@ -1190,7 +1194,6 @@
   font-weight: bold;
   border: none;
   text-transform: uppercase;
-    
 }
 
   /* Ocultar botón de abrir o cerrar */
@@ -1211,9 +1214,7 @@
   }
 
   .developers {
-
     visibility: hidden;
-
   }
 
   .nav__link {
@@ -1250,9 +1251,6 @@
 
   .iconoBuscador {
     width: 10px;
-
-
-
   }
 
   .banner {
@@ -1303,9 +1301,6 @@
     font-weight: bold;
   }
 
-
-
-
   .products {
     background-color: #157FE6;
     text-align: center;
@@ -1335,9 +1330,6 @@
     /* margin: 0 -2rem 0 3rem; */
     border-radius: 2%;
     box-shadow: rgb(71, 71, 151) 1px 1px 6px 2px;
-
-
-
   }
 
   .card-img img {
