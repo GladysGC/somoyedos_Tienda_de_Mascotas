@@ -2,198 +2,199 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Pequeña Mascota</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
-  <script defer src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pequeña Mascota</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
+    <script defer src="index.js"></script>
 </head>
 
 <body>
-  <!--Menu de navegación creado por Silvio Aguilar :D-->
-  <!-- Header -->
-  <header class="header">
-    <!-- Logo -->
-    <div class="logo">
-      <div class="header_logo">MI PEQUEÑA MASCOTA</div>
-      <a href=""><img class="huella" src="./recursos/cat-footprint-50.png" /></a>
-    </div>
-    <div class="menu-derecha">
-      <!--Perfil del Usuario-->
-      <a href="profile" class="profile"><img class="iconos-s" src="./recursos/customer-50.png" /></a>
-      <!--Carrito de la compra-->
-      <a href="#carrito" class="carrito_icono"><img class="iconos-s" src="./recursos/shopping-cart-50.png" /></a>
-    </div>
-
-    <!-- Fin Navegador -->
-  </header>
-  <!-- Fin Header -->
-
-  <!--Barra de Busqueda-->
-  <div class="busqueda" id="home">
-    <input type="text" id="search" placeholder="Encuentra tus productos favoritos..." />
-  </div>
-  <!--Fin barra de Busqueda-->
-
-  <!--Banner-->
-  <div class="banner">
-    <img class="imagenBanner" src="./recursos/banner.png">
-    <a class="btnServicios" href="#servicios">Más servicios
-
-    </a></img>
-  </div>
-
-  <!--Fin Banner-->
-
-  <div class="container" id="noticias"></div>
-
-  <section class="ultNoticias">
-    <h4 class="ultNoticias_titulo">ÚLTIMAS NOTICIAS</h4>
-
-    <div class="contenedorNoticias">
-      <div class="noticias">
-        <img class="imagen_noticias" src="recursos/NOTICIAS-Cuidados-hamster.jpg" alt="Imagen de un hamster" />
-        <h6>Cuidados que tiene que tener un hámster</h6>
-        <p class="textoNoticias">Este curioso roedor es una mascota que lleva mucho tiempo en los hogares de nuestro
-          país. Queremos aprovechar el blog de hoy para darte unos consejos si has <a href="#">...</a>
-
-        </p>
-        <div class="pieNoticias">
-          <div class="pieNoticias__left">Marzo 2023</div>
-          <div class="pieNoticias__right">Categoria: cuidados</div>
+    <nav class="ajuste">
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
         </div>
-      </div>
-      <div class="noticias">
-        <img class="imagen_noticias" src="recursos/NOTICIAS-Golpe-calor-mascotas.jpg" alt="Imagen de un perro" />
-        <h6>Golpe de calor en mascotas, cómo evitarlo</h6>
-        <p class="textoNoticias">Con la llegada del calor nuestras mascotas también sufren los efectos negativos de
-          calor excesivo. Por ello debemos tomar una serie de precauciones para evitar un golpe de calor. <a
-            href="#">...</a>
-
-        <div class="pieNoticias">
-          <div class="pieNoticias__left">Marzo 2023</div>
-          <div class="pieNoticias__right">Categoria: cuidados</div>
+        <div class="logo">
+            <div class="header_logo">MI PEQUEÑA MASCOTA</div>
+            <a href=""><img class="huella" src="./recursos/cat-footprint-50.png" /></a>
         </div>
-      </div>
+        <div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Contacto</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="menu-derecha">
+            <!--Perfil del Usuario-->
+            <a href="profile" class="profile"><img class="iconos-s" src="./recursos/customer-50.png" /></a>
+            <!--Carrito de la compra-->
+            <a href="#carrito" class="carrito_icono"><img class="iconos-s" src="./recursos/shopping-cart-50.png" /></a>
+        </div>
+    </nav>
+    <!--Banner-->
+    <div class="banner ajuste">
+        <img class="imagenBanner" src="recursos/pexels-pixabay-160846.jpg" width="">
+        <a class="btnServicios" href="#servicios">Más servicios</a></img>
     </div>
-    <button class="btn_ultNoticias__footer" name="button">Cargar más noticias...</button>
-  </section>
 
-  <!-- Productos -->
+    <!--Fin Banner-->
 
-  
-    <!-- Contenedor de elementos -->
-    <section claSS="contenedor">
-      <span class="titulo_productos" id="enlace_productos">PRODUCTOS</span>
-      <div class="contenedor-items">
-          <div class="item">
-              <span class="titulo-item">HILLS</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">38€</span>
-              <button class="boton-item">Agregar al Carrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">HILLS2</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">46€</span>
-              <button class="boton-item">Agregar al Carrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">HILLS3</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">23€</span>
-              <button class="boton-item">Agregar al Carrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">HILLS4</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">35€</span>
-              <button class="boton-item">Agregar al Carrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">HILLS5</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">12€</span>
-              <button class="boton-item"> Agregar al Carrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">HILLS6</span>
-              <img src="recursos/hills.png" alt="" class="img-item">
-              <div class="stars-cotainer">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-                <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
-              </div>
-              <span class="descripcion">HILLS PRESCRIPTION DIET <br>
-                METABOLIC PIENSO PARA PERROS</span>
-              <span class="precio-item">62€</span>
-              <button class="boton-item">Agregar al Carrito</button>
-          </div>
-      </div>
+    <div class="container ajuste" id="noticias"></div>
+
+    <section class="ultNoticias ajuste">
+        <span class="titulo">ÚLTIMAS NOTICIAS</span>
+
+        <div class="contenedorNoticias">
+            <div class="noticias">
+                <img class="imagen_noticias" src="recursos/NOTICIAS-Cuidados-hamster.jpg" alt="Imagen de un hamster" />
+                <h6>Cuidados que tiene que tener un hámster</h6>
+                <p class="textoNoticias">Este curioso roedor es una mascota que lleva mucho tiempo en los hogares de
+                    nuestro
+                    país. Queremos aprovechar el blog de hoy para darte unos consejos si has <a href="#">...</a>
+
+                </p>
+                <div class="pieNoticias">
+                    <div class="pieNoticias__left">Marzo 2023</div>
+                    <div class="pieNoticias__right">Categoria: cuidados</div>
+                </div>
+            </div>
+            <div class="noticias">
+                <img class="imagen_noticias" src="recursos/NOTICIAS-Golpe-calor-mascotas.jpg"
+                    alt="Imagen de un perro" />
+                <h6>Golpe de calor en mascotas, cómo evitarlo</h6>
+                <p class="textoNoticias">Con la llegada del calor nuestras mascotas también sufren los efectos
+                    negativos
+                    de
+                    calor excesivo. Por ello debemos tomar una serie de precauciones para evitar un golpe de calor.
+                    <a href="#">...</a>
+
+                <div class="pieNoticias">
+                    <div class="pieNoticias__left">Marzo 2023</div>
+                    <div class="pieNoticias__right">Categoria: cuidados</div>
+                </div>
+            </div>
+        </div>
+        <button class="btn_ultNoticias__footer" name="button">Cargar más noticias...</button>
     </section>
+    <!-- Productos -->
+    <!-- Contenedor de elementos -->
+    <section class="contenedor ajuste">
+        <span class="titulo" id="enlace_productos">PRODUCTOS</span>
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">HILLS</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">38€</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">HILLS2</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">46€</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">HILLS3</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">23€</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">HILLS4</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">35€</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">HILLS5</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">12€</span>
+                <button class="boton-item"> Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">HILLS6</span>
+                <img src="recursos/hills.png" alt="" class="img-item">
+                <div class="stars-cotainer">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                    <img src="./recursos/icons8-estrella-48.png" alt="estrella_Icono">
+                </div>
+                <span class="descripcion">HILLS PRESCRIPTION DIET <br>
+                    METABOLIC PIENSO PARA PERROS</span>
+                <span class="precio-item">62€</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de Productos -->
+    <!-- Carrito de Compras -->
+    <div class="carrito ajuste" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+        <div class="carrito-items">
 
-  <!-- Fin de Productos -->
-
-
-<!-- Carrito de Compras -->
-  <div class="carrito" id="carrito">
-    <div class="header-carrito">
-        <h2>Tu Carrito</h2>
-    </div>
-
-    <div class="carrito-items">
-        
-        <!-- <div class="carrito-item">
+            <!-- <div class="carrito-item">
             <img src="recursos/hills.png" width="80px" alt="">
             <div class="carrito-item-detalles">
                 <span class="carrito-item-titulo">HILL`S</span>
@@ -224,101 +225,99 @@
         </button>
         </div>
          -->
-    </div>
-    <div class="carrito-total">
-        <div class="fila">
-            <strong>Tu Total</strong>
-            <span class="carrito-precio-total"></span>
         </div>
-        <button class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i> </button>
-    </div>
-</div>
-</article>
-
-
-  <!--Formulario por Dalia-->
-  <section id="contacto">
-    <div>
-      <h4><span>Escríbenos</span></h4>
-    </div>
-
-    <div class="container">
-      <div class="contenedorFormulario">
-        <form action="/action_page.php" method="post">
-
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">Nombre</label>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total"></span>
             </div>
-
-            <div class="col-75">
-              <input type="text" name="nombre" id="nombre" value="" placeholder="¿Cómo te llamas?" autofocus required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label>Email</label>
-            </div>
-
-            <div class="col-75">
-              <input type="email" name="email" id="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                placeholder="hola@tuemail.com" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="Mensaje">Mensaje</label>
-            </div>
-
-            <div class="col-75">
-              <textarea id="mensaje" name="mensaje" value="" placeholder="Cuéntanos cómo podemos ayudarte.."
-                required></textarea>
-            </div>
-          </div>
-
-          <input class="botonEnviar" type="submit" id="submit" value="Enviar">
-
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="fg">
-      <div class="fgizq">
-        <div class="fIzq">
-          <h3><strong>MI PEQUEÑA MASCOTA</strong> <a href=""><img class="huella"
-                src="./recursos/cat-footprint-50.png" /></a></h3>
+            <button class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i> </button>
         </div>
-        <div class="socialIcons">
-          <img src="./recursos/icons8-pinterest-64.png" alt="icono de pinterest" srcset="">
-          <img src="./recursos/icons8-instagram-96.png" alt="icono de instagram" srcset="">
-          <img src="./recursos/icons8-facebook-circled-48.png" alt="icono de facebook">
-          <img src="./recursos/icons8-youtube-logo-64.png" alt="icono de youtube">
-          <img src="./recursos/icons8-tiktok-50.png" alt="icono de tiktok">
-        </div>
-      </div>
-      <div class="fgder">
+    </div>
+    </article>
+    <!--Formulario por Dalia-->
+    <section class="ajuste" id="contacto">
         <div>
-          <h5>SOBRE NOSOTROS</h5>
+            <h4><span>Escríbenos</span></h4>
         </div>
-        <div>
-          <h5>NUESTROS SERVICIOS</h5>
-        </div>
-        <div>
-          <h5>TÉRMINOS LEGALES</h5>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h6>C MI PEQUEÑA MASCOTA, S.L.UI -2023 -Todos los derechos reservados</h6>
-    </div>
-  </footer>
 
-  <script src="index.js"></script>
+        <div class="container">
+            <div class="contenedorFormulario">
+                <form action="/action_page.php" method="post">
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Nombre</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="text" name="nombre" id="nombre" value="" placeholder="¿Cómo te llamas?"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Email</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="email" name="email" id="email" value=""
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="hola@tuemail.com"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Mensaje">Mensaje</label>
+                        </div>
+
+                        <div class="col-75">
+                            <textarea id="mensaje" name="mensaje" value=""
+                                placeholder="Cuéntanos cómo podemos ayudarte.." required></textarea>
+                        </div>
+                    </div>
+
+                    <input class="botonEnviar" type="submit" id="submit" value="Enviar">
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer ajuste">
+        <div class="fg">
+            <div class="fgizq">
+                <div class="fIzq">
+                    <h3><strong>MI PEQUEÑA MASCOTA</strong> <a href=""><img class="huella"
+                                src="./recursos/cat-footprint-50.png" /></a></h3>
+                </div>
+                <div class="socialIcons">
+                    <img src="./recursos/icons8-pinterest-64.png" alt="icono de pinterest" srcset="">
+                    <img src="./recursos/icons8-instagram-96.png" alt="icono de instagram" srcset="">
+                    <img src="./recursos/icons8-facebook-circled-48.png" alt="icono de facebook">
+                    <img src="./recursos/icons8-youtube-logo-64.png" alt="icono de youtube">
+                    <img src="./recursos/icons8-tiktok-50.png" alt="icono de tiktok">
+                </div>
+            </div>
+            <div class="fgder">
+                <div>
+                    <h5>SOBRE NOSOTROS</h5>
+                </div>
+                <div>
+                    <h5>NUESTROS SERVICIOS</h5>
+                </div>
+                <div>
+                    <h5>TÉRMINOS LEGALES</h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h6>C MI PEQUEÑA MASCOTA, S.L.UI -2023 -Todos los derechos reservados</h6>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
