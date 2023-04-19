@@ -1229,6 +1229,17 @@ textarea {
         min-width: 20%;
     }
 
+    .contenedorFormulario {
+        box-shadow: 3px 0px 15px var(--portland-orange);
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     /**
    * FOOTER
    */
@@ -1272,6 +1283,17 @@ textarea {
         padding-block: 100px;
     }
 
+    .contenedorFormulario {
+        box-shadow: 3px 0px 15px var(--portland-orange);
+        border-radius: 10px;
+        width: 60%;
+        margin: auto;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     /**
    * BRAND, FOOTER
    */
@@ -1282,16 +1304,6 @@ textarea {
         margin-inline: auto;
     }
 
-    .contenedorFormulario {
-        box-shadow: 3px 0px 30px var(--portland-orange);
-        border-radius: 10px;
-        width: 60%;
-        margin: auto;
-        padding: 1em;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
 
     .footer {
         padding-block-start: 40px;
