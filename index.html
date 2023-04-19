@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,14 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet"/>
     <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
+    <!-- <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
 </head>
 
 <body id="top">
     <!-- 
     - #HEADER
-  -->
+-->
 
     <header class="header" data-header>
         <div class="container">
@@ -60,11 +64,28 @@
                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                 </button>
 
-                <button class="action-btn carrito" aria-label="cart">
+                <div class="header-section container">
+                    <div>
+                        <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                    </div>
+                    <div class="toPay">
+                        <h2>Total:  <strong class="price-total">0</strong>€</h2>
+                        <a class="btnPagar"
+                        href="">Pagar</a>
+                    </div>
+                </div>
+
+                <!-- <button class="action-btn carrito" aria-label="cart">
                     <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
                     <span class="btn-badge">0</span>
-                </button>
+                </button> -->
             </div>
         </div>
     </header>
@@ -161,7 +182,7 @@
                     background-image: url('./assets/images/offer-banner-1.jpg');
                     --width: 540;
                     --height: 374;
-                  ">
+                ">
                                 <p class="card-subtitle">Golpe de calor en mascotas.</p>
 
                                 <h3 class="h3 card-title">
@@ -177,7 +198,7 @@
                     background-image: url('./assets/images/offer-banner-2.jpg');
                     --width: 540;
                     --height: 374;
-                  ">
+                ">
                                 <p class="card-subtitle">Tratamientos y Aseo.</p>
 
                                 <h3 class="h3 card-title">
@@ -193,7 +214,7 @@
                     background-image: url('./assets/images/offer-banner-3.jpg');
                     --width: 540;
                     --height: 374;
-                  ">
+                ">
                                 <p class="card-subtitle">Nuestra marca te encantara.</p>
 
                                 <h3 class="h3 card-title">
@@ -208,241 +229,91 @@
             </section>
 
             <!-- PRODUCTOS -->
-            <section class="section product" id="shop" aria-label="product">
-                <div class="container">
-                    <h2 class="h2 section-title">
-                        <span class="span">Productos</span> Destacados
-                    </h2>
-
-                    <ul class="grid-list">
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-1.jpg" width="360" height="360" loading="lazy"
-                                        alt="Commodo leo sed porta" class="img-cover default" />
-                                    <img src="./assets/images/product-1_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Commodo leo sed porta" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Commodo leo sed porta</a>
-                                    </h3>
-
-                                    <data class="card-price" value="15">€15.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-2.jpg" width="360" height="360" loading="lazy"
-                                        alt="Purus consequat congue sit" class="img-cover default" />
-                                    <img src="./assets/images/product-2_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Purus consequat congue sit" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Purus consequat congue sit</a>
-                                    </h3>
-
-                                    <data class="card-price" value="45">€45.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-3.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover default" />
-                                    <img src="./assets/images/product-3_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Morbi vel arcu scelerisque</a>
-                                    </h3>
-
-                                    <data class="card-price" value="45">€45.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-4.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover default" />
-                                    <img src="./assets/images/product-4_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Morbi vel arcu scelerisque</a>
-                                    </h3>
-
-                                    <data class="card-price" value="49">€49.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-5.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover default" />
-                                    <img src="./assets/images/product-5_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Morbi vel arcu scelerisque" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Morbi vel arcu scelerisque</a>
-                                    </h3>
-
-                                    <data class="card-price" value="85">€85.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-6.jpg" width="360" height="360" loading="lazy"
-                                        alt="Nam justo libero porta ege" class="img-cover default" />
-                                    <img src="./assets/images/product-6_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Nam justo libero porta ege" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Nam justo libero porta ege</a>
-                                    </h3>
-
-                                    <data class="card-price" value="85">€85.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-7.jpg" width="360" height="360" loading="lazy"
-                                        alt="Nam justo libero porta ege" class="img-cover default" />
-                                    <img src="./assets/images/product-7_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Nam justo libero porta ege" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Nam justo libero porta ege</a>
-                                    </h3>
-
-                                    <data class="card-price" value="85">€85.00</data>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-card">
-                                <div class="card-banner img-holder" style="--width: 360; --height: 360">
-                                    <img src="./assets/images/product-8.jpg" width="360" height="360" loading="lazy"
-                                        alt="Etiam commodo leo sed" class="img-cover default" />
-                                    <img src="./assets/images/product-8_0.jpg" width="360" height="360" loading="lazy"
-                                        alt="Etiam commodo leo sed" class="img-cover hover" />
-
-                                    <button class="card-action-btn" aria-label="add to card" title="Add To Card">
-                                        <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-                                    </button>
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="wrapper">
-                                        <div class="rating-wrapper gray">
-                                        </div>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a class="card-title">Etiam commodo leo sed</a>
-                                    </h3>
-
-                                    <data class="card-price" value="55">€55.00</data>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <section class="Productos">
+                <div class="products">
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                        
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                        
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                    
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                    
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                        
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+                        
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
                 </div>
             </section>
 
-            <!-- SERVICIOS -->
+<!-- SERVICIOS -->
+
             <section class="section service" aria-label="service">
                 <div class="container">
                     <h2 class="h2 section-title">
