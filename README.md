@@ -1,4 +1,4 @@
-##Bienvenido al repositorio oficial de samoyedos! 
+##Bienvenido al repositorio oficial de samoyedos tienda de mascotas! 
 
 **Instalación.**
 
