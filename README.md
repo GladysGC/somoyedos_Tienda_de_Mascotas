@@ -26,6 +26,7 @@ Creamos varias ramas en el proyecto:
 
 > FORMULARIO
 
+> GLADYS
 ### Desarollo:
 
 > Hicimos varias correcciones de errores en el formulario y diseño de la pagina web
